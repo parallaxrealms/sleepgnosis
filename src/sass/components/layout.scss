@@ -1,0 +1,64 @@
+body {
+  background-color: $black;
+  margin: 0;
+  padding: 0;
+
+  ::selection {
+    background-color: $white;
+  }
+
+  a:hover {
+    cursor: crosshair !important;
+  }
+
+  img:hover {
+    cursor: crosshair !important;
+  }
+
+  button:hover {
+    cursor: crosshair !important;
+  }
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  display: block;
+}
+
+main {
+  width: 100vw;
+  min-height: 100%;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#blocker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#instructions {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
